@@ -21,7 +21,7 @@
 ・ｉｃｏｎのプレビュー
 ・タップで背景を全面表示
 
-サブ１(java: xml:)
+サブ１(java : imgchanger.java  xml:imgchanger.xml)
 ・ウィジェットプレビュー
 ・文字入力
 ・画像選択
