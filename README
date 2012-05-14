@@ -40,3 +40,10 @@ android ver　→　2.3
 画面サイズ　 →　800 * 480
 言語         →  java
 プロジェクト管理は各自で。
+
+eclipse開発
+  ・android ver：2.3.1
+  ・プロジェクト名：任意
+  ・アプリケーション名：disp-top
+  ・パッケージ名：jp.com.disp-top
+  ・Activity：任意
