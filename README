@@ -16,7 +16,7 @@
 ・キャッシュ用ディレクトリ作成
 
 
-メイン(java: xml:)
+メイン(java : MainActivity.java xml : main.xml)
 ・α値→スライドバーで変更
 ・ｉｃｏｎのプレビュー
 ・タップで背景を全面表示
