@@ -11,7 +11,7 @@
 サブ２：kohri
 サブ３：
 
-メインメニュー(java : menuActivity xml : menu.xml)
+メインメニュー(java : menuActivity.java xml : menu.xml)
 ・メイン、サブ１
 ・キャッシュ用ディレクトリ作成
 
