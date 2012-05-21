@@ -11,12 +11,12 @@
 サブ２：kohri
 サブ３：
 
-メインメニュー(java : menuActivity.java xml : menu.xml)
+メインメニュー(java : MainActivity.java xml : main.xml)
 ・メイン、サブ１
 ・キャッシュ用ディレクトリ作成
 
 
-メイン(java : MainActivity.java xml : main.xml)
+メイン(java : menuActivity.java xml : menu.xml)
 ・α値→スライドバーで変更
 ・ｉｃｏｎのプレビュー
 ・タップで背景を全面表示
