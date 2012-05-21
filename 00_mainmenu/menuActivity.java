@@ -1,14 +1,16 @@
 //2012.5.16 現在バグ発生中
 
-package jp.com.disptop;
+package jp.com.disp_top;
+
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class menuActivity extends Activity {
+public class menuActivity extends Activity implements OnClickListener{
 	/** Called when the activity is first created. */
 	
 	//各ボタンを召喚
@@ -20,18 +22,16 @@ public class menuActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.menu);
-
-		// メイン機能へじゃーんぷ☆
-		button_main.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				Intent intent = new Intent();
-				intent.setClassName("jp.com.disptop",
-						"jp.com.disptop.MainActivity");
-				startActivity(intent);
-
-			}
-		});
+		
 	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO 自動生成されたメソッド・スタブ
+		if(v == button_main){
+			Intent intent = new Intent(this,MainActivity.class);
+			startActivity(intent);
+		}
+	}
+
 }
