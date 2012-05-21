@@ -1,6 +1,6 @@
 //2012.5.16 現在バグ発生中
 
-package jp.com.disp_top;
+package jp.com.disptop;
 
 
 import android.app.Activity;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class menuActivity extends Activity implements OnClickListener{
+public class MainActivity extends Activity implements OnClickListener{
 	/** Called when the activity is first created. */
 	
 	//各ボタンを召喚
