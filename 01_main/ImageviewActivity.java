@@ -10,6 +10,7 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.Display;
+import android.view.MotionEvent;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
@@ -41,5 +42,17 @@ public class ImageviewActivity extends Activity{
 		//イメージビューに取得した壁紙を設定
 		img.setImageBitmap(bitmap);
 
+	}
+	
+	//タッチイベント
+	public boolean onTouchEvent(MotionEvent event) {
+		 switch (event.getAction()) {
+		 	//画面が押された時Activity終了
+	        case MotionEvent.ACTION_DOWN:
+	        	this.moveTaskToBack(true);
+	            break;
+	        }
+		return super.onTrackballEvent(event);
+		
 	}
 }
