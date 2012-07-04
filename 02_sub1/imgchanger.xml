@@ -1,14 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
+    android:layout_height="fill_parent" android:orientation="vertical">
 	<TextView  
     	android:layout_width="fill_parent" 
     	android:layout_height="wrap_content" 
     	android:text="@string/hello"
     	/>
-	<Button android:text="make shortcut 1" android:id="@+id/shortcut_btn1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-	<Button android:text="make shortcut 2" android:id="@+id/shortcut_btn2" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    	
+	<LinearLayout 
+		android:id="@+id/linearLayout4" 
+		android:layout_height="wrap_content" 
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+	
+		<ImageView 
+			android:id="@+id/imageView1" 
+			android:layout_height="70px" 
+			android:layout_width="70px" 
+			android:src="@drawable/icon"
+			android:layout_gravity="center_horizontal"></ImageView>
+		
+	</LinearLayout>
+	
+	<LinearLayout 
+		android:id="@+id/linearLayout1" 
+		android:layout_height="wrap_content" 
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+		<EditText 
+			android:hint="title" 
+			android:id="@+id/editText1" 
+			android:layout_width="170px" 
+			android:layout_height="wrap_content"></EditText>
+				
+	</LinearLayout>
+	
+	<LinearLayout 
+		android:id="@+id/linearLayout2" 
+		android:layout_height="wrap_content" 
+		android:layout_width="match_parent">
+		
+		<EditText 
+			android:hint="img url" 
+			android:id="@+id/editText2" 
+			android:layout_width="170px" 
+			android:layout_height="40px"></EditText>
+			
+		<Button 
+			android:text="select" 
+			android:id="@+id/button2" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"></Button>
+			
+	</LinearLayout>
+	<Spinner android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/spinner1"></Spinner>
+	
+	<LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout3" android:layout_width="match_parent">
+		<Button android:id="@+id/shortcut_btn1" android:text="ショートカット作成" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+		<Button android:text="ホーム画面へ" android:id="@+id/to_home" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+	</LinearLayout>
+		
 </LinearLayout>
